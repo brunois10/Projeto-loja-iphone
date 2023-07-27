@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 48px;
+    background-color: rgb(21, 138, 255);
+    padding: 10px;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(21, 138, 255);
+    border-bottom: 2px solid rgb(21, 138, 255);
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.container.sobre-loja {
+    margin-bottom: 60px;
+}
+
+.sobre-loja {
+    display: flex;
+}
+
+.texto-sobre {
+    display: block;
+    margin-left: 32px;
+}
+
+.texto-sobre h2 {
+    margin-bottom: 46px;
+}
+
+.produtos {
+    margin-top: 30px;
+    margin-bottom: 38px;
+}
+
+section ul {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    list-style: none;
+}
+
+h3,
+ul li p {
+    margin-bottom: 16px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    background-color: rgb(21, 138, 255);
+    border: 1px solid rgb(21, 138, 255);
+    border-radius: 10px;
+    width: 252px ;
+    height: 30px ;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 640px) {
+
+    header ul {
+        display: block;
+    }
+
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .texto-sobre {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    
+    section ul {
+        display: block;
+    }
+
+    section  ul li h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    section ul li img {
+        width: 100%;
+    }
+
+    button {
+        width: 350px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        display: block;
+        margin-left: 0;
+    }
+    
+    .container img {
+        width: 92%;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+
+    section ul {
+        grid-template-columns: repeat(2, 49%)
+    }
+
+    .produtos {
+        margin-left: 30px;
+    }
+
+    .tablet {
+        display: block;
+        margin-left: 30px;
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 400px;
+        height: 50px;
+        font-size: 1em;
+    }
+}
